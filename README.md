@@ -4,12 +4,12 @@ This repository offers implementations for two loss functions: the Decoupled Hyp
 
 Our paper's experiments were conducted using the codebase provided in [this](https://github.com/AndrewAtanov/simclr-pytorch) repository.
 
-**_DHEL_** and **I**:
+**_DHEL_** and **_KCL_**:
 - outperform other InfoNCE variants, such as SimCLR and DCL, even with smaller batch sizes
 - demonstrate robustness against hyperparameters
 - effectively utilize more dimensions, mitigating the dimensionality collapse problem
 
-Also, **I** possesses several intriguing properties:
+Also, **_KCL_** possesses several intriguing properties:
 - the expected loss remains unaffected by the number of negative samples
 - its minima can be identified non-asymptotically.
 
