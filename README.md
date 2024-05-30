@@ -13,7 +13,7 @@ Also, **_KCL_** possesses several intriguing properties:
 - the expected loss remains unaffected by the number of negative samples
 - its minima can be identified non-asymptotically.
 
-The introduced **I** measures the Wasserstein distance between learned and optimal similarity distributions. Unlike the conventional uniformity metric, it accurately estimates uniformity without underestimation.
+The introduced **_metric_** measures the Wasserstein distance between learned and optimal similarity distributions. Unlike the conventional uniformity metric, it accurately estimates uniformity without underestimation.
 
 ## Citation
 
