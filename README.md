@@ -4,9 +4,16 @@ This repository offers implementations for two loss functions: the Decoupled Hyp
 
 Our paper's experiments were conducted using the codebase provided in [this](https://github.com/AndrewAtanov/simclr-pytorch) repository.
 
-DHEL and KCL outperform other InfoNCE variants, such as SimCLR and DCL, even with smaller batch sizes. They demonstrate robustness against hyperparameters and effectively utilize more dimensions, mitigating the dimensionality collapse problem. Notably, KCL possesses several intriguing properties: (1) the expected loss remains unaffected by the number of negative samples, and (2) its minima can be identified non-asymptotically.
+**_DHEL_** and **I**:
+- outperform other InfoNCE variants, such as SimCLR and DCL, even with smaller batch sizes
+- demonstrate robustness against hyperparameters
+- effectively utilize more dimensions, mitigating the dimensionality collapse problem
 
-The introduced metric measures the Wasserstein distance between learned and optimal similarity distributions. Unlike the conventional uniformity metric, it accurately estimates uniformity without underestimation.
+Also, **I** possesses several intriguing properties:
+- the expected loss remains unaffected by the number of negative samples
+- its minima can be identified non-asymptotically.
+
+The introduced **I** measures the Wasserstein distance between learned and optimal similarity distributions. Unlike the conventional uniformity metric, it accurately estimates uniformity without underestimation.
 
 ## Citation
 
