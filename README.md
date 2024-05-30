@@ -1,3 +1,22 @@
 # Bridging Mini-Batch and Asymptotic Analysis in Contrastive Learning: From InfoNCE to Kernel-Based Losses
 
-> **Abstract**: What do different contrastive learning (CL) losses actually optimize for? Although multiple CL methods have demonstrated remarkable representation learning capabilities, the differences in their inner workings remain largely opaque. In this work, we analyse several CL families and prove that, under certain conditions, they admit the same minimisers when optimizing either their batch-level objectives or their expectations asymptotically. In both cases, an intimate connection with the hyperspherical energy minimisation (HEM) problem resurfaces. Drawing inspiration from this, we introduce a novel CL objective, coined Decoupled Hyperspherical Energy Loss (DHEL). DHEL simplifies the problem by decoupling the target hyperspherical energy from the alignment of positive examples while preserving the same theoretical guarantees. Going one step further, we show the same results hold for another relevant CL family, namely kernel contrastive learning (KCL), with the additional advantage of the expected loss being independent of batch size, thus identifying the minimisers in the non-asymptotic regime. Empirical results demonstrate improved downstream performance and robustness across combinations of different batch sizes and hyperparameters and reduced dimensionality collapse, on several computer vision datasets. 
+This repository offers implementations for two loss functions: the Decoupled Hyperspherical Energy Loss (DHEL) and the Kernel Contrastive Loss (KCL), as presented in the paper available [here](https://arxiv.org/abs/2405.18045). Additionally, it includes the metrics applied on the learned representations, such as the introduced Wasserstein distance, which measures uniformity and effective rank.
+
+Our paper's experiments were conducted using the codebase provided in [this](https://github.com/AndrewAtanov/simclr-pytorch) repository.
+
+DHEL and KCL outperform other InfoNCE variants, such as SimCLR and DCL, even with smaller batch sizes. They demonstrate robustness against hyperparameters and effectively utilize more dimensions, mitigating the dimensionality collapse problem. Notably, KCL possesses several intriguing properties: (1) the expected loss remains unaffected by the number of negative samples, and (2) its minima can be identified non-asymptotically.
+
+The introduced metric measures the Wasserstein distance between learned and optimal similarity distributions. Unlike the conventional uniformity metric, it accurately estimates uniformity without underestimation.
+
+## Citation
+
+```
+@misc{koromilas2024bridging,
+      title={Bridging Mini-Batch and Asymptotic Analysis in Contrastive Learning: From InfoNCE to Kernel-Based Losses}, 
+      author={Panagiotis Koromilas and Giorgos Bouritsas and Theodoros Giannakopoulos and Mihalis Nicolaou and Yannis Panagakis},
+      year={2024},
+      eprint={2405.18045},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
