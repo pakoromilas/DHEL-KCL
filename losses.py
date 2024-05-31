@@ -77,7 +77,6 @@ class KCL(nn.Module):
         self.t = t
         self.kernel = kernel
         self.gamma = gamma
-        self.distributed = False  # Placeholder for distributed data parallel support
 
     def forward(self, z):
         """
