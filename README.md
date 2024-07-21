@@ -18,12 +18,19 @@ The introduced **_metric_** measures the Wasserstein distance between learned an
 ## Citation
 
 ```
-@inproceedings{
-koromilas2024bridging,
-title={Bridging Mini-Batch and Asymptotic Analysis in Contrastive Learning: From Info{NCE} to Kernel-Based Losses},
-author={Panagiotis Koromilas and Giorgos Bouritsas and Theodoros Giannakopoulos and Mihalis Nicolaou and Yannis Panagakis},
-booktitle={Forty-first International Conference on Machine Learning},
-year={2024},
-url={https://openreview.net/forum?id=SvvvB5t5EW}
+
+@InProceedings{pmlr-v235-koromilas24a,
+  title = 	 {Bridging Mini-Batch and Asymptotic Analysis in Contrastive Learning: From {I}nfo{NCE} to Kernel-Based Losses},
+  author =       {Koromilas, Panagiotis and Bouritsas, Giorgos and Giannakopoulos, Theodoros and Nicolaou, Mihalis and Panagakis, Yannis},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+  pages = 	 {25276--25301},
+  year = 	 {2024},
+  editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume = 	 {235},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {21--27 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/koromilas24a/koromilas24a.pdf},
+  url = 	 {https://proceedings.mlr.press/v235/koromilas24a.html}
 }
 ```
